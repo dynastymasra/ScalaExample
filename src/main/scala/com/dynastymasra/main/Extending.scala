@@ -37,8 +37,18 @@ class Location(override val xc: Int, override val yc: Int, val zc: Int) extends 
 object MainExtending {
   //http://www.tutorialspoint.com/scala/scala_classes_objects.htm
   def main(args: Array[String]) {
+    println("Extending")
     val main = new Location(10, 15, 20);
     main.move(10, 10)
     main.move(25, 30, 35)
+
+    val singleton = new Extending(10, 20)
+    printSingle
+
+    def printSingle: Unit = {
+      println("Singleton")
+      println(s"Point x = ${singleton.x}")
+      println(s"Point y = ${singleton.y}")
+    }
   }
 }
