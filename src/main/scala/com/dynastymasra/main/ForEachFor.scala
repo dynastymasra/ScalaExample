@@ -24,7 +24,7 @@ class ForEachFor {
   }
 }
 
-object main {
+object Main {
   def main(args: Array[String]) {
     val test = new ForEachFor()
     test.testForEach()
