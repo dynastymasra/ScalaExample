@@ -80,6 +80,7 @@ gen-external-apklibs
 # log file #
 ############
 *.log
+test.txt
 
 #########
 # Scala #
