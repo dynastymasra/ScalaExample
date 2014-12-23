@@ -31,5 +31,6 @@ object MainOptional {
     UserRepository.findById(2).foreach(item => println(item.firstName))
     println(UserRepository.findById(1).map(_.age))
     println(UserRepository.findById(1).map(_.gender))
+    println(UserRepository.findById(1).flatMap(_.gender))
   }
 }
